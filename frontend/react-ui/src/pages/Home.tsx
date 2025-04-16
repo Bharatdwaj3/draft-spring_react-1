@@ -1,10 +1,12 @@
-import {SType} from '../components/types';
-
-function Home({name,type}: SType) {
+import {Header, Navbar, Footer, Hero} from '../components/index';
+function Home() {
   return (
     <>
-        <h1>{name}</h1>
-        <h3>{type}</h3>
+        
+        <Navbar name="NavigationBar" type="component"/>
+        <Header name="HeaderSection" type="component"/>
+        <Hero name="HeroSection" type="component"/>
+        <Footer name="FooterSection" type="component"/>
     </>
   )
 }
