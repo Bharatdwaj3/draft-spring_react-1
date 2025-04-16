@@ -1,4 +1,4 @@
-import {SType} from './types';
+import {SType} from '../components/types';
 
 function Home({name,type}: SType) {
   return (

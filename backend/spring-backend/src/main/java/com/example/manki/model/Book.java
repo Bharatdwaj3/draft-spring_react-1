@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 
 @Entity 
 @Table(name="tasks")
-public class Task {
+public class Book {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
@@ -12,9 +12,9 @@ public class Task {
     private String title;
     private boolean completed;
 
-    public Task(){}
+    public Book(){}
 
-    public Task(String title, boolean completed){
+    public Book(String title, boolean completed){
         this.title=title;
         this.completed=completed;
     }

@@ -1,32 +1,32 @@
 package com.example.manki.service;
 
 import org.springframework.stereotype.Service;
-import com.example.manki.model.Task;
-import com.example.manki.repository.TaskRepository;
+import com.example.manki.model.Book;
+import com.example.manki.repository.BookRepository;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class TaskService {
-    private final TaskRepository taskRepository;
-    public TaskService(TaskRepository taskRepository){
+public class BookService {
+    private final BookRepository taskRepository;
+    public BookService(BookRepository taskRepository){
         this.taskRepository=taskRepository;
     }
 
-    public List<Task> getAllTasks(){
+    public List<Book> getAllTasks(){
         return taskRepository.findAll();
     }
 
-    public Optional<Task> getTaskById(Long id){
+    public Optional<Book> getTaskById(Long id){
         return taskRepository.findById(id);
     }
 
-    public Task addTask(Task task){
+    public Book addTask(Book task){
         return taskRepository.save(task);
     }
 
-    public Optional<Task> updateTaskStatus(Long id, boolean completed){
+    public Optional<Book> updateTaskStatus(Long id, boolean completed){
         return taskRepository.findById(id).map(task->{
             return taskRepository.save(task);
         });
