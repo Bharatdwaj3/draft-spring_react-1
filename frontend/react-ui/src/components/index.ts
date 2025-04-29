@@ -1,13 +1,16 @@
 import Navbar from "./Navabr";
 import Header from "./Header";
 import Footer from "./Footer";
-import Hero from "./Hero";
-import { BookCard, BookDetail, BookList } from "./BookComponents";
-import { Search, Pagination, Filter, Convert } from "./Extras";
-import { Login, Signout, Signin, Profile } from "./User";
+
+import { Login, Signout, Signin, Profile } from "./User_Components";
+import {Hero, Hero_Form} from "./Hero_Components";
+import { BookCard, BookDetail, BookList } from "./Book_Components";
+import { Search, Pagination, Filter, Convert } from "./Extra_Components";
+
 
 export {
-    Navbar, Header, Footer,Hero, 
+    Navbar, Header, Footer,
+    Hero, Hero_Form, 
     BookCard, BookDetail, BookList,
     Search, Pagination, Filter, Convert,
     Login, Signout, Signin, Profile

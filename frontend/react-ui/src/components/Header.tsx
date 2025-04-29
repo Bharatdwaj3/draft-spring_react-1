@@ -1,10 +1,9 @@
-import {SType} from '../components/types';
 
-function Header({name,type}: SType) {
+
+function Header() {
   return (
     <>
-        <h1>{name}</h1>
-        <h3>{type}</h3>
+        <div className="h-[500px] w-[1469px] bg-amber-200"></div>
     </>
   )
 }

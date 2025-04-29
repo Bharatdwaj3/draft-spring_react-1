@@ -1,5 +1,4 @@
-import './App.css'
-import {Home, Content, About} from './pages/index';
+import {Home} from './pages/index';
 
 
 function App() {
@@ -7,8 +6,6 @@ function App() {
   return (
     <>
       <Home/>
-      <Content/>
-      <About/>    
     </>
   )
 }

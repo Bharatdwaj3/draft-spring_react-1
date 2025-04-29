@@ -1,10 +1,7 @@
-import {SType} from '../components/types';
-
-function Navbar({name,type}: SType) {
+function Navbar() {
   return (
     <>
-        <h1>{name}</h1>
-        <h3>{type}</h3>
+        <div className="h-[100px] w-[1469px] bg-lime-400"></div>
     </>
   )
 }
