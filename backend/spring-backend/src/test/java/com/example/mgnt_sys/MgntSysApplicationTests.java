@@ -1,10 +1,10 @@
-package com.example.manki;
+package com.example.mgnt_sys;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MankiApplicationTests {
+class MgntSysApplicationTests {
 
 	@Test
 	void contextLoads() {
