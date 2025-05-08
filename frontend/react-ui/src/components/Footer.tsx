@@ -2,7 +2,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 
-function Footer() {
+const Footer = () => {
   return (
     <>
         <div className='p-16 w-full h-[500px] bg-gradient-to-t from-blue-100 to-slate-600 absolute bottom-0'>
@@ -76,6 +76,8 @@ function Footer() {
          <div className=" w-[1200px] h-24 absolute inset-x-0 bottom-0 ml-20 border-t border-white"></div>
 
     </div>
+
+        
     </>
   )
 }
